@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dr. Savita Pawar</h1>
+            <p>Researcher | Expert in Disease Prediction in Grape Crops</p>
+        </header>
+        <nav>
+            <button class="tab-link active" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-link" onclick="openTab(event, 'projects')">Projects</button>
+            <button class="tab-link" onclick="openTab(event, 'publications')">Publications</button>
+            <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+        </nav>
+        
+        <section id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>Passionate researcher specializing in disease prediction in grape crops using climate data.</p>
+        </section>
+        
+        <section id="experience" class="tab-content">
+            <h2>Experience</h2>
+            <p>List of professional experiences, research projects, and academic roles.</p>
+        </section>
+        
+        <section id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <p>Showcase of major projects, including grape disease prediction models.</p>
+        </section>
+        
+        <section id="publications" class="tab-content">
+            <h2>Publications</h2>
+            <ul>
+                <li>Plant Visualization Using IoT and AR - IJEA, April 2020</li>
+                <li>Smart Glasses: Digital Assistance in Industry - Springer, Nov. 2019</li>
+                <li>Li + Wi-Fi: The Future of IoT - ICCES, Oct. 2018</li>
+                <li>Real-time Traffic Monitoring System - IRF Conf., Feb. 2016</li>
+                <li>Detection & Classification of Brain Tumor - IJSRD, Feb. 2016</li>
+            </ul>
+        </section>
+        
+        <section id="contact" class="tab-content">
+            <h2>Contact</h2>
+            <p>Email: savita.pawar@example.com</p>
+            <p>LinkedIn: linkedin.com/in/savitapawar</p>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
